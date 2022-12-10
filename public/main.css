@@ -49,7 +49,7 @@ Variables
   --ff-secondary: "Inconsolata sans",sans-serif;
   --radius: 1rem;
   --spacing: .5rem;
-  --transition: all 1.3s ease-in-out linear;
+  --transition: all .3s ease-in-out;
   --small-text: .5em;
   --fixed-width: 620px;
   --max-width: 1170px;
@@ -147,16 +147,14 @@ p {
 }
 @keyframes bounce {
   0% {
-    opacity: 1;
     transform: scale(1);
   }
   50% {
-    opacity:.6;
+    opacity: .6;
     transform: scale(1.3);
   }
   100% {
-    opacity: 1;
-    transform: scale(1);
+    transform: scale(1)
   }
 }
 @keyframes hamburger {
@@ -248,7 +246,7 @@ nav {
 .nav-center {
   width: 90vw;
   max-width: var(--max-width);
-  display: inline-block;
+  display:flex;
   align-items: center;
   justify-content: center;
 }
